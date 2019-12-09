@@ -18,12 +18,17 @@ Raspberry Pi
     ```
 - Install the required modules
     ```
-    pip3 install gspread
-    pip3 install oauth2client
-    pip3 install crontab
+    pip3 install --upgrade gspread
+    pip3 install --upgrade oauth2client
+    pip3 install --upgrade crontab
     ```
-- run the schedule using
+- run the scheduler using
     ```
     python3 scheduler.py
     ```
 
+Google Sheet
+- Follow the steps to get the credentials for the Google sheet
+    ```
+    https://gspread.readthedocs.io/en/latest/oauth2.html
+    ```
