@@ -1,6 +1,6 @@
 # Set up
 
-Arduino/RFID
+**Arduino**
 - Follow Sparkfun's guide to apply thermal pad, and attach the external antenna
     ```
     https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/introduction
@@ -10,7 +10,7 @@ Arduino/RFID
     https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library
     ```
 
-Raspberry Pi
+**Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
 - Download and follow the instruction for NOOBS/Raspbian
     ```
@@ -27,7 +27,7 @@ Raspberry Pi
     python3 scheduler.py
     ```
 
-Google Sheet
+**Google Sheet**
 - Follow the steps to get the credentials for the Google sheet
     ```
     https://gspread.readthedocs.io/en/latest/oauth2.html
