@@ -9,7 +9,9 @@ Arduino/RFID
 Raspberry Pi
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
 - Download and follow the instruction for NOOBS/Raspbian
-    `https://www.raspberrypi.org/downloads/`
+    ```
+    https://www.raspberrypi.org/downloads/
+    ```
 - Install the required modules
     ` pip3 install gspread \n` 
     ` pip3 install oauth2client`
