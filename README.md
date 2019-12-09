@@ -9,10 +9,11 @@
     ```
     https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library
     ```
+- Upload > RFID.ino to the Arduino
 
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
-- Download and follow the instruction for NOOBS/Raspbian
+- Download and follow the instruction for NOOBS/Raspbian, or other Linux distros of your choice
     ```
     https://www.raspberrypi.org/downloads/
     ```
@@ -32,3 +33,4 @@
     ```
     https://gspread.readthedocs.io/en/latest/oauth2.html
     ```
+
