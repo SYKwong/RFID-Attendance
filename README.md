@@ -10,7 +10,7 @@
 
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
-- [Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other Linux distros of your choice
+- Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other Linux distros of your choice
 - Install the required modules
     ```
     pip3 install --upgrade gspread
@@ -21,7 +21,6 @@
 **Google Sheet**
 - Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
-
 
 **Running**
 - Upload `RFID.ino` to the Arduino
@@ -36,9 +35,9 @@
     Column 1    Column 2    Column 3    Column 4
     Class-Name  Class-Time  Meeting-Day Section
     ```
-    - First row is unchecked
-    - Class-Time needs to be in 24-hour format HH:MM
-    - Meeting-Day uses NMTWRFS for
+    - *First row* is unchecked
+    - *Class-Time* needs to be in 24-hour format HH:MM
+    - *Meeting-Day* uses NMTWRFS for
     ```
     suNday
     Monday
@@ -48,7 +47,7 @@
     Friday
     Saturday
     ```
-    - Section refers to the nth+1 sheet of the spreadsheet
+    - *Section* refers to the nth+1 sheet of the spreadsheet
 - Open the terminal and run the schudler using 
     ```
     python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
