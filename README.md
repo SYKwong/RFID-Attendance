@@ -59,6 +59,8 @@
 ![Box](https://github.com/SYKwong/RFID-Attendance/blob/master/Case/box%20screenshot.png)
 Arduino and Reader sits at the bottom and the Pi sits above. The larger hole is where the fan is mounted inside the structure and blows in. The dimensions are 65.75mm wide, 71.25mm tall, and 127mm long. 
 
+
+![BoxWithStuff](https://github.com/SYKwong/RFID-Attendance/blob/master/Case/SLDWORKS_2019-12-02_18-41-10.png)
 - An example of how all the pieces would fit together inside. The Solidworks models and files for the devices were borrowed from online sources. This does not include the RFID Tag Reader shield attached to the Arduino, however we took many measurements to ensure that there would be enough room for the reader the jumper cables coming out of the shield. 
 Files containing the CAD designs of the Raspberry Pi 4, the Arduino UNO R3, and the 60mm fan: 
     - [Raspberry Pi 4](https://grabcad.com/library/raspberry-pi-4-model-b-1) 
