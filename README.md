@@ -44,7 +44,7 @@
 - Make sure the schedule is in the first sheet of the spreadsheet and in the format of
     ```
     Column 1    Column 2    Column 3    Column 4
-    Class-Name	Class-Time	Meeting-Day	Section
+    Class-Name  Class-Time  Meeting-Day Section
     ```
     - First row is unchecked
     - Class-Time needs to be in 24-hour format HH:MM
