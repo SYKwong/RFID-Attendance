@@ -1,4 +1,4 @@
-# RFID Attendance
+# [RFID Attendance](https://sites.google.com/view/rfid-project/home)
 
 # Set up
 
@@ -13,7 +13,7 @@
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
 - Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other fully compatible Linux distros of your choice
-- Install the required modules
+- Install the required modules using
     ```
     pip3 install gspread
     pip3 install oauth2client
@@ -21,7 +21,7 @@
     ```
 - GPIO_18 is being used to turn on/off the RFID reader
 - RFID reader is on when the program is executing, and off after the Raspberry Pi finishs executing the program
-  
+
 **Google Sheet**
 - Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
