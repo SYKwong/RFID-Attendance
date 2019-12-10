@@ -60,7 +60,7 @@
     ```
     - Section refers to the nth+1 sheet of the spreadsheet
 - Open the terminal and run the schudler using 
-    `
+    ```
     python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
-    `
+    ```
 
