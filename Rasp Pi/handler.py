@@ -9,6 +9,7 @@ import serial
 import time
 import RPi.GPIO as GPIO
 
+#for logging purpose
 print("start ", datetime.datetime.now())
 
 GPIO.setmode(GPIO.BCM)
@@ -32,62 +33,63 @@ GPIO.output(18, 1)
 time.sleep(5)
 
 def rfid():
+    fail = 0
     ser.close()
     ser.open()
-    #print("start")
     end = time.time() + 60*20
     while time.time() < end:
         line = ser.readline()
         linestr = str(line)
         linestr = linestr.strip(" 'b\\n\\r")
-        print(linestr)
         if linestr == "Module failed to respond. Please check wiring.":
+            # Reset the RFID reader if it outputs an error
              ser.close()
              ser.open()
-             if linestr in attendance:
+             fail = 1
+             if fail > 0:
                  GPIO.output(18, 0)
                  time.sleep(5)
                  GPIO.output(18, 1)
                  time.sleep(5)
         else:
             attendance.add(linestr)
-    #print("end")
+            # Else just add the output to the attendance set
 
 def update(classIndex):
+    #Get the current date in MM/DD/YY
     date = datetime.datetime.today().strftime("%m/%d/%y")
 
+    #Get the sheet
     classSheet = googleSheet.get_worksheet(classIndex)
+
+    #Get the index for starting column
     offset = len(classSheet.row_values(1))+1
+
+    #Add an extra column if the sheet is out of columns
     if offset>=26:
         classSheet.resize(None, offset)
+
+    #Get the column with the students' EPC numbers
     enrollment = classSheet.col_values(2)
+    #The first value from the column is "EPC number"
     enrollment.pop(0)
 
+    #Update the value of the first cell from the starting column with the current date
     classSheet.update_cell(1,offset, date)
+
+    #Check if student is present
     for student in attendance:
         if student in enrollment:
             studentIndex = enrollment.index(student)+2
             classSheet.update_cell(studentIndex, offset, "1")
 
-
-def cleanup():
-    #get rid of the extra stuff
-    attendance.add("Module continuously reading. Asking it to stop...")
-    attendance.add("Initializing...")
-    attendance.add("")
-    attendance.add("Searching for tag")
-
-    attendance.remove("Initializing...")
-    attendance.remove("Module continuously reading. Asking it to stop...")
-    attendance.remove("")
-    attendance.remove("Searching for tag")
-
 if __name__ == '__main__':
     classIndex = int(sys.argv[1])
 
     rfid()
-    cleanup()
     GPIO.output(18, 0)
 
     update(classIndex)
+
+    #for logging purpose
     print("end ", datetime.datetime.now())
