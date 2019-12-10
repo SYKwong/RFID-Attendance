@@ -4,9 +4,7 @@
 
 **Arduino**
 - Follow Sparkfun's guide to apply thermal pad, and attach the external antenna
-    ```
     (https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/introduction)
-    ```
 - Follow Sparkfun's instusction to install the Arduino library
     ```
     (https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library)
