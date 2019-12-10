@@ -55,3 +55,5 @@
     python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
     ```
 
+**Case**
+![Box](https://github.com/SYKwong/RFID-Attendance/blob/master/Case/box%20screenshot.png)
