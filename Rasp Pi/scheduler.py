@@ -14,13 +14,15 @@ client = gspread.authorize(creds)
 
 enrollment_sheet = client.open("ATTENDANCE").get_worksheet(0)
 classTime = enrollment_sheet.col_values(2)
-classTime.pop(0)
 meetingDay = enrollment_sheet.col_values(3)
-meetingDay.pop(0)
 section = enrollment_sheet.col_values(4)
+
+# Remove the reference cell
+classTime.pop(0)
+meetingDay.pop(0)
 section.pop(0)
 
-# cant get gspread to work in vscode because im dumb
+
 # meetingDay = ["M", "MWF", "TR"]
 # classTime = ["12:30", "8:30", "14:00"]
 #M1 T2 W3 R4 F5 S6 N0
@@ -53,19 +55,12 @@ while m < len(meetingDay):
     #we start reading 10min before class
     minute = int(''.join(mins))-10
     hour = int(''.join(hrs))
-#     sect = int(z)
 
     if minute < 0:
         minute += 60
         hour -= 1
-    # print(minute)
-    # print(hour)
-
-    # minute hour * * dayOfWeekStr
-    #print(minute, hour, '*', '*', dayOfWeekStr)
 
     comm = sys.executable + ' /home/pi/Desktop/ATTENDANCE/handler.py '+ z + ' >> /home/pi/Desktop/ATTENDANCE/cron.log 2>&1'
-
 
     job1 = cron.new(comm)
 
