@@ -50,6 +50,7 @@
     Saturday
     ```
     - *Section* refers to the nth+1 sheet of the spreadsheet
+- `scheduler.py` has a bug where if Class-Time is 00:00, the cron table would produce an error, but since it is unrealistic to have a class at 00:00, we decided to ignore it.
 - Open the terminal and run the schudler using 
     ```
     python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
