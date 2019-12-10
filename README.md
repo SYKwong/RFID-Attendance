@@ -19,7 +19,9 @@
     pip3 install oauth2client
     pip3 install python-crontab
     ```
-    
+- GPIO_18 is being used to turn on/off the RFID reader
+- RFID reader is on when the program is executing, and off after the Raspberry Pi finishs executing the program
+  
 **Google Sheet**
 - Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
