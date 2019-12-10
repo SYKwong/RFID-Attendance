@@ -17,7 +17,7 @@
     ```
     pip3 install --upgrade gspread
     pip3 install --upgrade oauth2client
-    pip3 install --upgrade crontab
+    pip3 install --upgrade python-crontab
     ```
     
 **Google Sheet**
