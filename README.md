@@ -23,14 +23,23 @@
     pip3 install --upgrade oauth2client
     pip3 install --upgrade crontab
     ```
-- run the scheduler using
+- Run the scheduler using
     ```
     python3 scheduler.py
     ```
-
+- Make sure the following files are in 
+> /home/pi/Desktop/ATTENDANCE/
+    ```
+    creds.json
+    handler.py
+    scheduler.py
+    ```
+    
 **Google Sheet**
 - Follow the steps to get the credentials for the Google sheet
     ```
     https://gspread.readthedocs.io/en/latest/oauth2.html
     ```
+- Change the credential file name to 
+    > creds.json
 
