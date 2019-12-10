@@ -3,19 +3,14 @@
 # Set up
 
 **Arduino**
-- Follow [Sparkfun's guide] (https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/introduction)to apply thermal pad, and attach the external antenna
+- Follow [Sparkfun's guide](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/introduction) to apply thermal pad, and attach the external antenna
     
-- Follow Sparkfun's instusction to install the Arduino library
-    ```
-    (https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library)
-    ```
+- Follow [Sparkfun's instruction](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library) to install the Arduino library
+
 
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
-- Download and follow the instruction for NOOBS/Raspbian, or other Linux distros of your choice
-    ```
-    (https://www.raspberrypi.org/downloads/)
-    ```
+- [Download and follow the instruction for NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other Linux distros of your choice
 - Install the required modules
     ```
     pip3 install --upgrade gspread
@@ -24,10 +19,7 @@
     ```
     
 **Google Sheet**
-- Follow the steps to get the credentials for the Google sheet
-    ```
-    (https://gspread.readthedocs.io/en/latest/oauth2.html)
-    ```
+- Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
 
 
