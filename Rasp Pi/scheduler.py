@@ -22,9 +22,6 @@ classTime.pop(0)
 meetingDay.pop(0)
 section.pop(0)
 
-
-# meetingDay = ["M", "MWF", "TR"]
-# classTime = ["12:30", "8:30", "14:00"]
 #M1 T2 W3 R4 F5 S6 N0
 dic = {"M":1, "T":2, "W":3, "R":4, "F":5, "S":6, "N":0}
 m = 0
@@ -45,7 +42,6 @@ while m < len(meetingDay):
     #replace dow w/ numbers
     dayOfWeek = [dic.get(n,n) for n in dow]
     dayOfWeekStr = ','.join(map(str,dayOfWeek))
-    # print(dayOfWeekStr)
 
     #takes apart time into minute and hour
     meetingTimes = [str(d) for d in str(y)]
