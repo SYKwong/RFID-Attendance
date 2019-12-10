@@ -12,7 +12,7 @@
 
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
-- Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other fully compatible Linux distros of your choice
+- Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other fully compatible Linux distros of your choice(Pathing needs to be changed accordingly)
 - Install the required modules using
     ```
     pip3 install gspread
@@ -25,10 +25,13 @@
 **Google Sheet**
 - Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
-- Put the credential file in `/home/pi/Desktop/ATTENDANCE/`
+- Put it in the `ATTENDANCE` folder
 
 **Running**
-- Upload `RFID.ino` to the Arduino
+Arduino
+- Download `RFID.ino`, and upload it to the Arduino
+Raspberry Pi
+- Download the `ATTENDANCE` folder and place it on the Desktop `/home/pi/Desktop`
 - Make sure the following files are in `/home/pi/Desktop/ATTENDANCE/`
     ```
     creds.json
