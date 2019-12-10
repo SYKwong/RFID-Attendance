@@ -15,9 +15,9 @@
 - Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other fully compatible Linux distros of your choice
 - Install the required modules
     ```
-    pip3 install --upgrade gspread
-    pip3 install --upgrade oauth2client
-    pip3 install --upgrade python-crontab
+    pip3 install gspread
+    pip3 install oauth2client
+    pip3 install python-crontab
     ```
     
 **Google Sheet**
