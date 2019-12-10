@@ -11,7 +11,6 @@
     ```
     https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library
     ```
-- Upload `RFID.ino` to the Arduino
 
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
@@ -35,6 +34,7 @@
 
 
 **Running**
+- Upload `RFID.ino` to the Arduino
 - Make sure the following files are in `/home/pi/Desktop/ATTENDANCE/`
     ```
     creds.json
@@ -59,4 +59,8 @@
     Saturday
     ```
     - Section refers to the nth+1 sheet of the spreadsheet
+- Open the terminal and run the schudler using 
+    `
+    python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
+    `
 
