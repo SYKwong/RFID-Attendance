@@ -1,3 +1,5 @@
+# RFID Attendance
+
 # Set up
 
 **Arduino**
@@ -23,23 +25,38 @@
     pip3 install --upgrade oauth2client
     pip3 install --upgrade crontab
     ```
-- Run the scheduler using
-    ```
-    python3 scheduler.py
-    ```
-- Make sure the following files are in 
-> /home/pi/Desktop/ATTENDANCE/
-    ```
-    creds.json
-    handler.py
-    scheduler.py
-    ```
     
 **Google Sheet**
 - Follow the steps to get the credentials for the Google sheet
     ```
     https://gspread.readthedocs.io/en/latest/oauth2.html
     ```
-- Change the credential file name to 
-    > creds.json
+- Change the credential file name to `creds.json`
+
+
+**Running**
+- Make sure the following files are in `/home/pi/Desktop/ATTENDANCE/`
+    ```
+    creds.json
+    handler.py
+    scheduler.py
+    ```
+- Make sure the schedule is in the first sheet of the spreadsheet and in the format of
+    ```
+    Column 1    Column 2    Column 3    Column 4
+    Class-Name	Class-Time	Meeting-Day	Section
+    ```
+    - First row is unchecked
+    - Class-Time needs to be in 24-hour format HH:MM
+    - Meeting-Day uses NMTWRFS for
+    ```
+    suNday
+    Monday
+    Tuesday
+    Wednesday
+    thuRsday
+    Friday
+    Saturday
+    ```
+    - Section refers to the nth+1 sheet of the spreadsheet
 
