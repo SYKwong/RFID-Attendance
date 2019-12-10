@@ -10,7 +10,7 @@
 
 **Raspberry Pi**
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
-- [Download and follow the instruction for NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other Linux distros of your choice
+- [Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other Linux distros of your choice
 - Install the required modules
     ```
     pip3 install --upgrade gspread
