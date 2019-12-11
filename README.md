@@ -28,10 +28,10 @@
 - Put it in the `ATTENDANCE` folder
 
 ## Running
-Arduino
+**Arduino**
 - Download `RFID.ino`, and upload it to the Arduino
 
-Raspberry Pi
+**Raspberry Pi**
 - Download the `ATTENDANCE` folder and place it on the Desktop `/home/pi/Desktop`
 - Make sure the following files are in `/home/pi/Desktop/ATTENDANCE/`
     ```
