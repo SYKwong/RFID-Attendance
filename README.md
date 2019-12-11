@@ -22,7 +22,7 @@
 - GPIO_18 is being used to turn on/off the RFID reader
     - RFID reader is on when the program is executing, and off after the Raspberry Pi finishs executing the program
 
-##Google Sheet##
+## Google Sheet
 - Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
 - Put it in the `ATTENDANCE` folder
@@ -30,6 +30,7 @@
 ## Running
 Arduino
 - Download `RFID.ino`, and upload it to the Arduino
+
 Raspberry Pi
 - Download the `ATTENDANCE` folder and place it on the Desktop `/home/pi/Desktop`
 - Make sure the following files are in `/home/pi/Desktop/ATTENDANCE/`
