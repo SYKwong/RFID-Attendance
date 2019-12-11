@@ -2,7 +2,7 @@
 
 # Set up
 
-**Arduino**
+##Arduino##
 - Follow [Sparkfun's guide](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/introduction) to apply thermal pad, and attach the external antenna
     
 - Follow [Sparkfun's instruction](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/using-the-arduino-library) to install the Arduino library
@@ -10,7 +10,7 @@
 - The code is a modified version of the example code from the [SparkFun Simultaneous RFID Tag Reader Library](https://github.com/sparkfun/SparkFun_Simultaneous_RFID_Tag_Reader_Library)
 
 
-**Raspberry Pi**
+##Raspberry Pi##
 - We used Raspbian, but any Linux distro that is fully compatible with Raspberry Pi should work
 - Download and follow the instruction for [NOOBS/Raspbian](https://www.raspberrypi.org/downloads/), or other fully compatible Linux distros of your choice(Pathing needs to be changed accordingly)
 - Install the required modules using
@@ -22,12 +22,12 @@
 - GPIO_18 is being used to turn on/off the RFID reader
     - RFID reader is on when the program is executing, and off after the Raspberry Pi finishs executing the program
 
-**Google Sheet**
+##Google Sheet##
 - Follow the steps to get the [credentials for the Google sheet](https://gspread.readthedocs.io/en/latest/oauth2.html)
 - Change the credential file name to `creds.json`
 - Put it in the `ATTENDANCE` folder
 
-**Running**
+##Running##
 Arduino
 - Download `RFID.ino`, and upload it to the Arduino
 Raspberry Pi
@@ -62,7 +62,7 @@ Raspberry Pi
     python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
     ```
 
-**Case**
+##Case##
 ![Box](https://github.com/SYKwong/RFID-Attendance/blob/master/Case/box%20screenshot.png)
 Arduino and Reader sits at the bottom and the Pi sits above. The larger hole is where the fan is mounted inside the structure and blows in. The dimensions are 65.75mm wide, 71.25mm tall, and 127mm long. 
 
