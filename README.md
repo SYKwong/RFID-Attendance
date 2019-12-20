@@ -78,8 +78,7 @@ Files containing the CAD designs of the Raspberry Pi 4, the Arduino UNO R3, and 
 - Powering the Arduino via USB
     We were able to fully power the Arduino with the RFID reader and external antenna on; however, it would brownout(?) on some device, but having an external 9V power supply seemed to have solved the problem.
 
-- `scheduler.py` 
-    It has a bug where if Class-Time is 00:00, the cron table would produce an error, but since it is unrealistic to have a class at 00:00, we decided to ignore it.
+- `scheduler.py` has a bug where if Class-Time is 00:00, the cron table would produce an error, but since it is unrealistic to have a class at 00:00, we decided to ignore it.
 
 - Hardware limitation on the UHF RFID reader
     If one tag has a dominate electromagnetic field, the reader would only be able to detect that tag. 
