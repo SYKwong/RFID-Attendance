@@ -57,10 +57,9 @@
     Saturday
     ```
     - *Section* refers to the nth+1 sheet of the spreadsheet
-- `scheduler.py` has a bug where if Class-Time is 00:00, the cron table would produce an error, but since it is unrealistic to have a class at 00:00, we decided to ignore it.
 - Open the terminal and run the schudler using 
     ```
-    python3 /home/pi/Desktop/ATTENDANCE/scheduler.py
+    python3 ~/Desktop/ATTENDANCE/scheduler.py
     ```
 
 ## Case
@@ -74,3 +73,13 @@ Files containing the CAD designs of the Raspberry Pi 4, the Arduino UNO R3, and 
     - [Raspberry Pi 4](https://grabcad.com/library/raspberry-pi-4-model-b-1) 
     - [Arduino](https://my.solidworks.com/asset/3f1ffe37-e6ff-4405-ba55-ce50e84128bf)
     - [60mm fan](https://grabcad.com/library/cooling-fan-60x60x25-1)
+
+## Known Issue
+- Powering the Arduino via USB
+    We were able to fully power the Arduino with the RFID reader and external antenna on; however, it would brownout(?) on some device, but having an external 9V power supply seemed to have solved the problem.
+
+- `scheduler.py` 
+    It has a bug where if Class-Time is 00:00, the cron table would produce an error, but since it is unrealistic to have a class at 00:00, we decided to ignore it.
+
+- Hardware limitation on the UHF RFID reader
+    If one tag has a dominate electromagnetic field, the reader would only be able to detect that tag. 
