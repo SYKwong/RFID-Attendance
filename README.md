@@ -43,7 +43,7 @@
     Column 1    Column 2    Column 3    Column 4
     Class-Name  Class-Time  Meeting-Day Section
     ```
-    - *First row* is unchecked
+    - *First row* is unchecked as it is only used for reference purposes
     - *Class-Time* needs to be in 24-hour format HH:MM
     - *Meeting-Day* uses NMTWRFS for
     ```
